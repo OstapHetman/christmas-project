@@ -156,16 +156,17 @@ body {
 #clock {
 	display: flex;
 	width: 100%;
-	max-width: 300px;
+	max-width: 350px;
 	margin:0 auto;
 	margin-top: 8%;
-	height: 300px;
+	height: 350px;
 	align-items: center;
 	justify-content: center;
 	background-color: #CC231E;
 	position: relative;
 	flex-direction: column;
 	border-radius: 100%;
+	border:4px dashed white;
 }
 #clock h1 {
 	position: absolute;
@@ -339,4 +340,198 @@ body {
     width: 100%;
     transform: rotate(315deg) translate(300%,0);
   }
+}
+
+.tree {
+	position: absolute;
+	margin: auto;
+	bottom: 70px;
+	left: 80%;
+	margin-left: -100px;
+	width: 200px;
+	height: 150px;
+}
+.star-wrap {
+	height: 20px;
+	width: 20px;
+	background-color: #302013;
+	position: absolute;
+	top:150px;
+	left:40px;
+}
+
+.tree-layer {
+	width: 0px;
+	height: 0px;
+	border: 50px solid transparent;
+	margin: auto;
+	position: absolute;
+	bottom: 0;
+}
+
+.darkside {
+	border-bottom: 175px solid #26A65B;
+}
+
+.lightside {
+	border-bottom: 125px solid #2ECC71;
+}
+
+.lighterside {
+	border-bottom: 57.5px solid #2ECC71;
+}
+
+.darkerside {
+	border-bottom: 90px solid #26A65B;
+}
+
+.decoration {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	z-index: 99;
+	position: absolute;
+}
+#ball-1 {
+		animation-name: one-flash;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+@keyframes one-flash {
+  50% {
+    background: rgba(194,23,23,1);
+    box-shadow: 0px 2px 20px 4px rgba(194,23,23,1);
+  }
+  0%, 100% {
+    background: rgba(194,23,23,0.8);
+    box-shadow: 0px 2px 20px 4px rgba(194,23,23,0.1);
+  }
+}
+#ball-2 {
+		animation-name: two-flash;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+@keyframes two-flash {
+  50% {
+    background: rgba(231,207,0,1);
+    box-shadow: 0px 2px 20px 4px rgba(231,207,0,1);
+  }
+  0%, 100% {
+    background: rgba(231,207,0,0.8);
+    box-shadow: 0px 2px 20px 4px rgba(231,207,0,0.1);
+  }
+}
+#ball-3 {
+		animation-name: three-flash;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+@keyframes three-flash {
+  50% {
+    background: rgba(22,147,165,1);
+    box-shadow: 0px 2px 20px 4px rgba(22,147,165,1);
+  }
+  0%, 100% {
+    background: rgba(231,207,0,0.8);
+    box-shadow: 0px 2px 20px 4px rgba(22,147,165,0.1);
+  }
+}
+#ball-4 {
+		animation-name: four-flash;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+@keyframes four-flash {
+    50% {
+    background: rgba(194,23,23,1);
+    box-shadow: 0px 2px 20px 4px rgba(194,23,23,1);
+  }
+  0%, 100% {
+    background: rgba(194,23,23,0.8);
+    box-shadow: 0px 2px 20px 4px rgba(194,23,23,0.1);
+  }
+}
+#ball-5 {
+		animation-name: five-flash;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+@keyframes five-flash {
+    50% {
+    background: rgba(229,108,53,1);
+    box-shadow: 0px 2px 20px 4px rgba(229,108,53,1);
+  }
+  0%, 100% {
+    background: rgba(229,108,53,0.8);
+    box-shadow: 0px 2px 20px 4px rgba(229,108,53,0.1);
+  }
+}
+#ball-6 {
+		animation-name: six-flash;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+@keyframes six-flash {
+    50% {
+    background: rgba(57,65,102,1);
+    box-shadow: 0px 2px 20px 4px rgba(57,65,102,1);
+  }
+  0%, 100% {
+    background: rgba(57,65,102,0.8);
+    box-shadow: 0px 2px 20px 4px rgba(57,65,102,0.1);
+  }
+}
+.decoration:nth-child(1) {
+	transform: scale(1.5);
+	top: 110px;
+	left: 25px;
+	background: #C21717;
+	animation: blink 2s infinite;
+		box-shadow: 2px 3px 0px 7px #C21717 inset;
+}
+
+.decoration:nth-of-type(2) {
+	transform: scale(1.3);
+	top: 70px;
+	left: 65px;
+	background: #E7CF00;
+	box-shadow: 2px 3px 0px 7px #E7CF00 inset;
+}
+
+.decoration:nth-child(3) {
+	transform: scale(1.2);
+	top: 50px;
+	left: 35px;
+	background: #1693A5;
+	box-shadow: 2px 3px 0px 7px #1693A5 inset;
+}
+
+.decoration:nth-child(4) {
+	transform: scale(1.1);
+	top: 10px;
+	left: 45px;
+	background: #F64747;
+	box-shadow: 2px 3px 0px 7px #d83c3c inset;
+}
+
+.decoration:nth-child(5) {
+	transform: scale(0.8);
+	top: 120px;
+	left: 70px;
+	background: #E56C35;
+	box-shadow: 2px 3px 0px 7px #E56C35 inset;
+}
+.decoration:nth-child(6) {
+	transform: scale(0.8);
+	top: 90px;
+	left: 50px;
+	background: #394166;
+	box-shadow: 2px 3px 0px 7px #394166 inset;
 }
